@@ -1,6 +1,6 @@
 package ru.itmo.java;
 
-//@SuppressWarnings("all")
+@SuppressWarnings("all")
 public class Task2 {
 
     /**
@@ -38,7 +38,7 @@ public class Task2 {
      * @param inclusively входят ли границы в заданный даипазон
      */
     boolean numberInRange(Integer number, Integer leftBound, Integer rightBound, Boolean inclusively) {
-        if(number == null || leftBound == null || rightBound == null || inclusively == null) {
+        if (number == null || leftBound == null || rightBound == null || inclusively == null) {
             return false;
         }
         return (number > leftBound && number < rightBound)
@@ -49,9 +49,9 @@ public class Task2 {
      * Даны 3 символа. Определите является ли хотя бы один из них цифрой 1..9
      */
     boolean atLeastOneIsDigit(char c1, char c2, char c3) {
-        if ( '0' <= c1 & c1 <= '9' ) return true;
-        if ( '0' <= c2 & c2 <= '9' ) return true;
-        if ( '0' <= c3 & c3 <= '9' ) return true;
+        if ('0' <= c1 & c1 <= '9') return true;
+        if ('0' <= c2 & c2 <= '9') return true;
+        if ('0' <= c3 & c3 <= '9') return true;
         return false;
     }
 
