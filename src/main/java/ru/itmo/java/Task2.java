@@ -49,10 +49,9 @@ public class Task2 {
      * Даны 3 символа. Определите является ли хотя бы один из них цифрой 1..9
      */
     boolean atLeastOneIsDigit(char c1, char c2, char c3) {
-        if ('0' <= c1 & c1 <= '9') return true;
-        if ('0' <= c2 & c2 <= '9') return true;
-        if ('0' <= c3 & c3 <= '9') return true;
-        return false;
+        return '0' <= c1 & c1 <= '9'
+                || '0' <= c2 & c2 <= '9'
+                || '0' <= c3 & c3 <= '9';
     }
 
     /**
